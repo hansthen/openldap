@@ -71,6 +71,7 @@ uidNumber: ${uidNumber}
 add: uidNumber
 uidNumber:$(($uidNumber+1))
 END
+
         if [[ $? == 0 ]]; then
             echo $uidNumber;
             return 0;
