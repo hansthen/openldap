@@ -18,11 +18,11 @@ objectClass: organizationalUnit
 
 dn: cn=uid,dc=local,dc=root
 cn: uid
-objectClass: uidNext
+objectClass: counter
 uidNumber: 1050
 
 dn: cn=gid,dc=local,dc=root
 cn: gid
-objectClass: uidNext
+objectClass: counter
 uidNumber: 150
 

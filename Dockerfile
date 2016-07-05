@@ -3,7 +3,6 @@ MAINTAINER hans.then@gmail.com
 
 RUN yum -y install openldap-servers openldap-clients nc epel-release
 RUN cp /usr/share/openldap-servers/DB_CONFIG.example /var/lib/ldap/DB_CONFIG
-RUN yum -y install python-pip && pip install obol
 
 COPY rootimg /
 RUN chown -R ldap. /etc/openldap/ && \

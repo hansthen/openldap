@@ -21,7 +21,6 @@ if [[ -d /startup.d ]]; then
         . "\$f"
     done
     for f in /startup.d/*.ldif; do
-        echo \$f /var/log/startup.log
         ldapmodify -a -Y EXTERNAL -H ldapi:/// -f "\$f" >> /var/log/startup.log 2>&1
     done
 fi
